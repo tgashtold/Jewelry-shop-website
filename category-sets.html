@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Category-sets</title>
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- свайпер на главной -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-top">
+            <div class="content header-top__wrapper">
+
+                <div class="header-top-left">
+
+                    <form class="selection-field" action="">
+                        <select class="selection-field__form" name="currancy" id="">
+                        <option  class="selection-field__form-option" value="BYN" selected>BYN</option>
+                        <option class="selection-field__form-option" value="USD">USD</option>
+                        <option class="selection-field__form-option" value="RUB">RUB</option>
+                    </select>
+                    </form>
+
+                    <form class="selection-field" action="">
+                        <select class="selection-field__form" name="language" id="">
+                        <option class="selection-field__form-option" value="RUS" selected>РУССКИЙ</option>
+                        <option class="selection-field__form-option" value="ENG">ENGLISH</option>
+                    </select>
+                    </form>
+                </div>
+                <div class="header-top-center">
+                    <h1 class="header-top-center__content">Интернет-магазин украшений ручной работы из натуральных камней</h1>
+                </div>
+                <div class="header-top-right">
+                    <button class="header-top-right__button">Войти</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-middle">
+            <div class="content header-middle__wrapper ">
+                <a class="header-middle__link" href="index.html"><span class="header-middle__logo" >Tanchos Jewelry</span></a>
+                <div class="header-middle-right">
+                    <form class="search-field" action="">
+                        <div class="search-field__box">
+                            <img class="search-field__icon" src="styles/images/header_img/search.png" alt="">
+                            <input class="search-field__area" type="search" placeholder="Поиск">
+                        </div>
+                    </form>
+
+                    <a href="" class="shopping-basket">
+                        <img class="shopping-basket__icon" src="styles/images/header_img/shopbasket.png" alt="">
+                        <span class="shopping-basket__title">Корзина (3)
+
+                            </span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="header-low content">
+            <div class="js-humburger humburger">
+                <div class="humburger-line"></div>
+            </div>
+            <nav class="js-navigation header-low__wrapper">
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__item-link" href="">О нас</a></li>
+                    <li class="menu__item menu__item-wrapper"><button class="menu__item-link js-humburger1 humburger1">Украшения</button>
+
+                        <nav class="js-navigation1 header-low__wrapper1">
+                            <ul class="menu1">
+                                <li class="menu1__item1"><a class="menu1__item1-link1" href="category-sets.html">Комплекты</a></li>
+                                <li class="menu1__item1"><a class="menu1__item1-link1" href="">Браслеты</a>
+                                </li>
+                                <li class="menu1__item1"><a class="menu1__item1-link1" href="">Сережки</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="menu__item"><a class="menu__item-link" href="stones.html">О камнях</a></li>
+                    <li class="menu__item"><a class="menu__item-link" href="">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main class=" main">
+        <div class="content">
+            <div class="main-wrapper">
+                <div class="category-grid">
+
+                    <nav class="navigation-top">
+                        <div class="navigation-top-left">
+                            <a class="navigation-top__link" href="index.html">Главная</a><span class="navigation-top__separator">/</span>
+                            <a class="navigation-top__link" href="category-sets.html">Комплекты</a>
+                        </div>
+                        <div class="navigation-top-right">
+                            <span class="navigation-top__fragment">&lsaquo;</span>
+                            <a class="navigation-top__link" href=""> <span>Предыдущая страница</span></a>
+                        </div>
+                    </nav>
+
+
+                    <section class="filter-area">
+                        <h2 class="filter-area__head">фильтр</h2>
+                        <div class="filter">
+                            <input class="filter__checkbox" id="filter1" checked type="checkbox">
+                            <label class="filter__head" for="filter1"> 
+                            Камень
+                            </label>
+                            <form class="filter__field" action="">
+                                <label class="filter__option">
+                                        <input class="filter__option-checkbox" type="checkbox" value="stones" name="stone1">
+                                        <span class="filter__option-name">Все</span>
+                            </label>
+                                <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="amethyst" name="stone1">
+                                <span class="filter__option-name">Аметист</span>
+                            </label>
+                                <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="howlite" name="stone1">
+                                <span class="filter__option-name">Говлит</span>
+                            </label>
+                                <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="garnet" name="stone1">
+                                <span class="filter__option-name">Гранат</span>
+                            </label>
+                                <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="quarz" name="stone1">
+                                <span class="filter__option-name">Кварц</span>
+                            </label>
+                                <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="agate" name="stone1">
+                                <span class="filter__option-name">Агат</span>
+                            </label>
+                                <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="avanturine" name="stone1">
+                                <span class="filter__option-name">Авантюрин</span>
+                            </label>
+                                <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="amazonite" name="stone1">
+                                <span class="filter__option-name">Амазонит</span>
+                            </label>
+                                <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="lava" name="stone1">
+                                <span class="filter__option-name">Вулканическая лава</span>
+                            </label>
+                                <input class="filter__reset" type="reset" name="reset" value="Сбросить фильтр">
+                            </form>
+                        </div>
+                        <div class="filter"> <input class="filter__checkbox" id="filter2" type="checkbox">
+                            <label class="filter__head" for="filter2"> 
+                            Фурнитура
+                            </label>
+                            <form class="filter__field" action="">
+                                <label class="filter__option">
+                                        <input class="filter__option-checkbox" type="checkbox" value="forniture" name="stone1">
+                                        <span class="filter__option-name">Все</span>
+                            </label>
+                                <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="gold" name="stone1">
+                                <span class="filter__option-name">позолоченная</span>
+                            </label>
+                                <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="silver" name="stone1">
+                                <span class="filter__option-name">посеребренная</span>
+                            </label>
+                                <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="Swarovski" name="stone1">
+                                <span class="filter__option-name">кристаллы Swarovski</span>
+                            </label>
+                                <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="pendants" name="stone1">
+                                <span class="filter__option-name">шармы-подвески</span>
+                            </label>
+                                <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="beads" name="stone1">
+                                <span class="filter__option-name">шармы-бусины</span>
+                            </label>
+                                <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="zircon" name="stone1">
+                                <span class="filter__option-name">инкрустация цирконами</span>
+                            </label>
+                                <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="amazonite" name="stone1">
+                                <span class="filter__option-name">без инкрустации</span>
+                            </label>
+                                <input class="filter__reset" type="reset" name="reset" value="Сбросить фильтр">
+                            </form>
+                        </div>
+                        <div class="filter"> <input class="filter__checkbox" id="filter3" type="checkbox">
+                            <label class="filter__head" for="filter3"> 
+                            цвет
+                            </label>
+                            <form class="filter__field " action="">
+                                <div class="filter__wrapper">
+                                    <div class="filter__field-box">
+                                        <label class="filter__option">
+                                        <input class="filter__option-checkbox" type="checkbox" value="colors" name="stone1">
+                                        <span class="filter__option-name">Все</span>
+                            </label>
+                                        <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="white" name="stone1">
+                                <span class="filter__option-name">Белый</span>
+                            </label>
+                                        <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="black" name="stone1">
+                                <span class="filter__option-name">Черный</span>
+                            </label>
+                                        <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="blue" name="stone1">
+                                <span class="filter__option-name">Синий</span>
+                            </label></div>
+                                    <div class="filter__field-box">
+                                        <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="green" name="stone1">
+                                <span class="filter__option-name">Зеленый</span>
+                            </label>
+                                        <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="pink" name="stone1">
+                                <span class="filter__option-name">Розовый</span>
+                            </label>
+                                        <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="red" name="stone1">
+                                <span class="filter__option-name">Красный</span>
+                            </label>
+                                        <label class="filter__option">
+                                <input class="filter__option-checkbox" type="checkbox" value="othe-rcolor" name="stone1">
+                                <span class="filter__option-name">Иное</span>
+                            </label>
+                                    </div>
+                                </div>
+                                <input class="filter__reset" type="reset" name="reset" value="Сбросить фильтр">
+                            </form>
+                        </div>
+                    </section>
+
+                    <div class="category-head">
+                        <div class="advaticement-left__head category__title">
+                            <p class="advaticement-left__title category__title">Комплекты</p>
+                            <div class="advaticement-left__line category__line"></div>
+                        </div>
+                        <a href="" class="banner">
+                            <div class="banner-wrapper">
+                                <img src="styles/images/category_img/banner-agate-white.png" alt="" class="banner__image">
+                                <p class="banner__description">Фурнитура <br> Tierra Cast (США)<span class="banner__description-part">изящность и качество</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <section class="catallogue-area">
+                        <div class="customization">
+                            <div class="selection-wrapper">
+                                <form class="selection" action="">
+                                    <p class="selection__name">Сортировать по</p>
+                                    <select class="selection-form" name="sorting" id="">
+                        <option class="selection-form__option" value="newest">новинкам</option>
+                        <option class="selection-form__option" value="price-low">цене (с наименьшей)</option>
+                        <option class="selection-form__option" value="price-high">цене (с наибольшей)</option>
+                        <option class="selection-form__option" value="discount">скидке</option>
+                        <option class="selection-form__option" value="rating">популярности</option>
+                    </select></form>
+                                <form class="selection" action="">
+                                    <p class="selection__name">Показать</p>
+                                    <select class="selection-form" name="show" id="">
+                        <option class="selection-form__option" value="">9</option>
+                        <option class="selection-form__option" value="">12</option>
+                        <option class="selection-form__option" value="">15</option>
+                        <option class="selection-form__option" value="">все</option>
+                    </select></form>
+                            </div>
+                        </div>
+                        <div class="product-wrapper">
+                            <div class="product">
+                                <div class="image-wrapper">
+                                    <img class="product__image" src="styles/images/category_img/productcard1.png" alt=""></div>
+                                <div class="product__description">
+                                    <a class="product__name" href="product1.html">Комплект из говлита </a><span class="product__name-fragment">Шарм - "Дерево жизни", серьги - английская застежка.</span>
+                                    <span class="product__price">63,00 BYN</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="image-wrapper">
+                                    <img class="product__image" src="styles/images/category_img/productcard2.png" alt=""></div>
+                                <div class="product__description">
+                                    <a class="product__name" href="">Комплект из граната
+                                       </a>
+                                    <span class="product__name-fragment">Шарм - шар с фианитами, серьги - английская застежка</span><span class="product__price">65,00 BYN</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="image-wrapper">
+                                    <img class="product__image" src="styles/images/category_img/productcard6.png" alt=""> </div>
+                                <div class="product__description">
+                                    <a class="product__name" href="">Комплект из горного хрусталя </a><span class="product__name-fragment"> Cо вставками из искусственного жемчуга. Шарм - "Лист Монстеры", серьги - английская застежка.</span>
+                                    <span class="product__price">78,00 BYN</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="image-wrapper"><img class="product__image" src="styles/images/category_img/productcard4.png" alt=""> </div>
+                                <div class="product__description">
+                                    <a class="product__name" href="">Комплект из лавандового кварца </a><span class="product__name-fragment">Шарм - шар с фианитами, серьги - английская застежка.</span>
+                                    <span class="product__price">75,00 BYN</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="image-wrapper">
+
+                                    <img class="product__image" src="styles/images/category_img/productcard5.png" alt=""> </div>
+                                <div class="product__description">
+                                    <a class="product__name" href="">Комплект из черного агата и шунгита </a><span class="product__name-fragment"> C кристаллами Swarovski. Серьги - английская застежка.</span>
+                                    <span class="product__price">63,00 BYN</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="image-wrapper">
+                                    <img class="product__image" src="styles/images/category_img/productcard3.png" alt=""></div>
+                                <div class="product__description">
+                                    <a class="product__name" href="">Комплект из амазонита и гематита</a><span class="product__name-fragment"> Серьги - английская застежка.</span>
+                                    <span class="product__price">70,00 BYN</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="image-wrapper">
+                                    <img class="product__image" src="styles/images/category_img/productcard7.png" alt=""> </div>
+                                <div class="product__description">
+                                    <a class="product__name" href="">Комплект из авантюрина</a> <span class="product__name-fragment">Серьги - застежка-петля.</span>
+                                    <span class="product__price">48,00 BYN</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="image-wrapper">
+                                    <img class="product__image" src="styles/images/category_img/productcard8.png" alt="">
+                                </div>
+                                <div class="product__description">
+                                    <a class="product__name" href="">Комплект из кварца "Зеленый мох" </a><span class="product__name-fragment">Шарм - "Роза", серьги - английская застежка.</span>
+                                    <span class="product__price">58,00 BYN</span>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <div class="image-wrapper">
+                                    <img class="product__image" src="styles/images/category_img/productcard9.png" alt="">
+                                </div>
+                                <div class="product__description">
+                                    <a class="product__name" href="">Комплект из камня "Кошачий глаз"  </a><span class="product__name-fragment">C кристаллами Swarovski. Шарм - "Сердце", серьги - английская застежка.</span>
+                                    <span class="product__price">68,00 BYN</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="customization">
+                            <div class="selection-wrapper">
+                                <form class="selection" action="">
+                                    <p class="selection__name">Сортировать по</p>
+                                    <select class="selection-form" name="sorting" id="">
+                        <option class="selection-form__option" value="newest">новинкам</option>
+                        <option class="selection-form__option" value="price-low">цене (с наименьшей)</option>
+                        <option class="selection-form__option" value="price-high">цене (с наибольшей)</option>
+                        <option class="selection-form__option" value="discount">скидке</option>
+                        <option class="selection-form__option" value="rating">популярности</option>
+                    </select></form>
+                                <form class="selection" action="">
+                                    <p class="selection__name">Показать</p>
+                                    <select class="selection-form" name="show" id="">
+                        <option class="selection-form__option" value="">9</option>
+                        <option class="selection-form__option" value="">12</option>
+                        <option class="selection-form__option" value="">15</option>
+                        <option class="selection-form__option" value="">все</option>
+                    </select></form>
+                            </div>
+                            <nav class="page-navigation">
+                                <a class="page-navigation__button" href=""><img class="page-navigation__button-image" src="styles/images/category_img/arrow-left.png" alt=""></a>
+                                <a class="page-navigation__button" href="">1</a>
+                                <a class="page-navigation__button" href="">2</a>
+                                <a class="page-navigation__button" href="">3</a>
+                                <a class="page-navigation__button page-navigation__button-dots" href="">....</a>
+                                <a class="page-navigation__button" href="">10</a>
+                                <a class="page-navigation__button" href=""><img class="page-navigation__button-image" src="styles/images/category_img/arrow-right.png" alt=""></a>
+                            </nav>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="catallogue">
+                    <div class="catallogue__head">
+                        <div class="catallogue__head-line"></div>
+                        <div class="catallogue__head-title">Популярные камни</div>
+                        <div class="catallogue__head-line"></div>
+                    </div>
+                    <div class="catallogue__conteiner">
+                        <a class="catallogue__conteiner-item" href=""><img class="catallogue__conteiner-icon" src="styles/images/home-page_img/pinkquarz.png" alt="">
+                            <p>розовый кварц</p>
+                        </a>
+                        <a class="catallogue__conteiner-item" href=""><img class="catallogue__conteiner-icon" src="styles/images/home-page_img/garnet.png" alt="">
+                            <p>гранат</p>
+                        </a>
+                        <a class="catallogue__conteiner-item" href=""><img class="catallogue__conteiner-icon" src="styles/images/home-page_img/amethyst.png" alt="">
+                            <p>аметист</p>
+                        </a>
+                        <a class="catallogue__conteiner-item" href=""><img class="catallogue__conteiner-icon" src="styles/images/home-page_img/amazonite.png" alt="">
+                            <p>амазонит</p>
+                        </a>
+                        <a class="catallogue__conteiner-item" href=""><img class="catallogue__conteiner-icon" src="styles/images/home-page_img/howlit.png" alt="">
+                            <p>говлит</p>
+                        </a>
+                        <a class="catallogue__conteiner-item" href=""><img class="catallogue__conteiner-icon" src="styles/images/home-page_img/avantyrin.png" alt="">
+                            <p>авантюрин</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="bottom-box">
+                    <div class="bottom-box__conteiner">
+                        <span class="bottom-box__order">01.</span>
+                        <div class="bottom-box__box"><span class="bottom-box__title">Бесплатаня доставка по РБ</span>
+                            <span class="bottom-box__clarification">при заказе от 50,00 BYN</span></div>
+                    </div>
+                    <div class="bottom-box__conteiner">
+                        <span class="bottom-box__order">02.</span>
+                        <div class="bottom-box__box">
+                            <span class="bottom-box__title">Индивидуальное изготовление</span>
+                            <span class="bottom-box__clarification">с учетом всех ваших пожеланий</span></div>
+                    </div>
+                    <div class="bottom-box__conteiner">
+                        <span class="bottom-box__order">03.</span>
+                        <div class="bottom-box__box"> <span class="bottom-box__title">Широкий ассортимент</span>
+                            <span class="bottom-box__clarification">камней и фурнитуры</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper content">
+
+            <div class="footer-top">
+                <ul class="menu menu-footer">
+                    <li class="menu__item menu__footer-item"><a class="menu__item-link menu__footer-link" href="">О нас</a></li>
+                    <li class="menu__item menu__footer-item"><a class="menu__item-link menu__footer-link" href="">Украшения</a></li>
+                    <li class="menu__item menu__footer-item"><a class="menu__item-link menu__footer-link" href="stones.html">О камнях</a></li>
+                    <li class="menu__item menu__footer-item"><a class="menu__item-link menu__footer-link" href="">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-middle">
+                <div class="contacts">
+                    <h3 class="contacts__head">Контакты</h3>
+                    <p class="contacts__text">Ремесленник <br> Гаштольд Татьяна Петровна <br>УНП АС 4412504</p>
+                    <div class="contacts__details">
+                        <p class="contacts__details-text">Тел. / Viber / Whatsapp / Telegram: </p>
+                        <a class="contacts__details-link" href="tel:375291847201">+375 29 184 72 01 (Velcom)</a>
+                    </div>
+                    <div class="contacts__details">
+                        <p class="contacts__details-text">E-mail:</p>
+                        <a class="contacts__details-link" href="mailto:tanchos_jewelry@mail.ru" target="_blank">tanchos_jewelry@mail.ru</a>
+                    </div>
+                    <div class="contacts__net">
+                        <span class="contacts__net-title">Подпишитесь на наши обновления в социальных сетях:
+                        </span>
+                        <br>
+                        <a class="contacts__net-link" href="https://www.instagram.com/tanchos_jewelry/" target="_blank">
+                            <img class="contacts__net-image" src="styles/images/footer_img/instagram3.png" target="_blank" alt="">
+                        </a>
+                        <a class="contacts__net-link" target="_blank" href="https://www.facebook.com/Tanchos-Craft-Stone-Jewelry-428442717901018/"><img class="contacts__net-image" src="styles/images/footer_img/facebook3.png" target="_blank" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="location">
+                    <h3 class="location__head">Адрес</h3>
+                    <p class="location__description">ул. Жуковского, 19, г. Минск, 220007, Республика Беларусь</p>
+                    <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.941847648393!2d27.549430015858533!3d53.87946178009423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd026160a3b21%3A0xba7aaac3deb3a836!2z0YPQuy4g0JbRg9C60L7QstGB0LrQvtCz0L4gMTksINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1554885044159!5m2!1sru!2sby"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+                <div class="feedback">
+                    <h3 class="feedback__head">Обратная связь</h3>
+                    <form class="feedback__form" action="">
+                        <fieldset class="feedback__frame">
+                            <input class="feedback__frame-field" placeholder="Ваше имя" type="text" name="name">
+                            <input class="feedback__frame-field" placeholder="Ваш e-mail" type="email" mail="email">
+                            <textarea class="feedback__frame-field" placeholder="Ваше сообщение" name="opinion" id="" cols="30" rows="10"></textarea>
+
+                        </fieldset>
+                        <button class="feedback__submition" type="submit" name="feedback">Отправить</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-low"> Гаштольд Татьяна, 2019</div>
+        </div>
+    </footer>
+
+    <script src="js/common.js" defer></script>
+
+</body>
+
+</html>

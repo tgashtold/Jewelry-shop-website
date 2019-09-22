@@ -1,0 +1,39 @@
+// анимация из 3х картинок плавно перетекающих др в др, url-image - адрес картинки, необходимо писать в одинарных кавычках
+// @mixin animation-product ($name, $url-image2, $url-image3) {
+//     @keyframes $name {
+//         0% {
+//             background-image: url($url-image1);
+//         }
+//         30% {
+//             background-image: url($url-image2);
+//         }
+//         80% {
+//             background-image: url($url-image3);
+//             transition: 2s;
+//         }
+//         100% {
+//             background-image: url($url-image1);
+//         }
+//     }
+// }
+@mixin nutino ($weight, $size, $line, $type: 'Nutino-regular') {
+    font-weight: $weight;
+    font-family: $type, sans-serif;
+    font-size: $size;
+    line-height: $line;
+    font-style: normal;
+}
+
+@mixin playfair ($weight, $size, $line, $type: 'Playfair-regular') {
+    font-weight: $weight;
+    font-family: $type, sans-serif;
+    font-size: $size;
+    line-height: $line;
+    font-style: normal;
+}
+
+@mixin media-max($width) {
+    @media only screen and (max-width: $width) {
+        @content;
+    }
+}

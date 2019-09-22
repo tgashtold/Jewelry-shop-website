@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product1</title>
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- свайпер на главной -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+    <!-- слайдер с нижней каруселью -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-top">
+            <div class="content header-top__wrapper">
+                <div class="header-top-left">
+                    <form class="selection-field" action="">
+                        <select class="selection-field__form" name="currancy" id="">
+                        <option  class="selection-field__form-option" value="BYN" selected>BYN</option>
+                        <option class="selection-field__form-option" value="USD">USD</option>
+                        <option class="selection-field__form-option" value="RUB">RUB</option>
+                    </select>
+                    </form>
+                    <form class="selection-field" action="">
+                        <select class="selection-field__form" name="language" id="">
+                        <option class="selection-field__form-option" value="RUS" selected>РУССКИЙ</option>
+                        <option class="selection-field__form-option" value="ENG">ENGLISH</option>
+                    </select>
+                    </form>
+                </div>
+                <div class="header-top-center">
+                    <h1 class="header-top-center__content">Интернет-магазин украшений ручной работы из натуральных камней</h1>
+                </div>
+                <div class="header-top-right">
+                    <button class="header-top-right__button">Войти</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-middle">
+            <div class="content header-middle__wrapper ">
+                <a class="header-middle__link" href="index.html"><span class="header-middle__logo" >Tanchos Jewelry</span></a>
+                <div class="header-middle-right">
+                    <form class="search-field" action="">
+                        <div class="search-field__box">
+                            <img class="search-field__icon" src="styles/images/header_img/search.png" alt="">
+                            <input class="search-field__area" type="search" placeholder="Поиск">
+                        </div>
+                    </form>
+
+                    <a href="" class="shopping-basket">
+                        <img class="shopping-basket__icon" src="styles/images/header_img/shopbasket.png" alt="">
+                        <span class="shopping-basket__title">Корзина (3)
+                            </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-low content">
+            <div class="js-humburger humburger">
+                <div class="humburger-line"></div>
+            </div>
+            <nav class="js-navigation header-low__wrapper">
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__item-link" href="">О нас</a></li>
+                    <li class="menu__item menu__item-wrapper"><button class="menu__item-link js-humburger1 humburger1">Украшения</button>
+
+                        <nav class="js-navigation1 header-low__wrapper1">
+                            <ul class="menu1">
+                                <li class="menu1__item1"><a class="menu1__item1-link1" href="category-sets.html">Комплекты</a></li>
+                                <li class="menu1__item1"><a class="menu1__item1-link1" href="">Браслеты</a>
+                                </li>
+                                <li class="menu1__item1"><a class="menu1__item1-link1" href="">Сережки</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="menu__item"><a class="menu__item-link" href="stones.html">О камнях</a></li>
+                    <li class="menu__item"><a class="menu__item-link" href="">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class=" main">
+        <div class="content">
+            <div class="main-wrapper">
+                <nav class="navigation-top">
+                    <div class="navigation-top-left">
+                        <a class="navigation-top__link" href="index.html">Главная</a><span class="navigation-top__separator">/</span>
+                        <a class="navigation-top__link" href="category-sets.html">Комплекты</a>
+                        <span class="navigation-top__separator">/</span>
+                        <a class="navigation-top__link" href="product1.html">Комплект из говлита с шармом "Дерево жизни"</a>
+                    </div>
+                    <div class="navigation-top-right">
+                        <span class="navigation-top__fragment">&lsaquo;</span>
+                        <a class="navigation-top__link" href="category-sets.html"> <span>Предыдущая страница</span></a>
+                    </div>
+                </nav>
+                <div class="product-box">
+                    <div class="product-gallery">
+                        <div class="fotorama" data-nav="thumbs">
+                            <a href="styles/images/product_img/product1.jpg"><img src="styles/images/product_img/product1-1.jpg"></a>
+                            <a href="styles/images/product_img/product2.jpg"><img src="styles/images/product_img/product2-1.jpg"></a>
+                            <a href="styles/images/product_img/product3.jpg"><img src="styles/images/product_img/product3-1.jpg"></a>
+                            <a href="styles/images/product_img/product4.jpg"><img src="styles/images/product_img/product4-1.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="product-information">
+                        <span class="product-code">Артикул HW-13-TC-P</span>
+                        <h1 class="product-name">Комплект из говлита с шармом "Дерево жизни"</h1>
+                        <div class="rating">
+                            <div class="rating__head">
+                                <p class="rating__text">Оцените товар</p>
+                                <div class="rating-box">
+                                    <a class="rating-box__item" href="">19 отзывов</a>
+                                    <a class="rating-box__item" href="">Добавить отзыв</a>
+                                </div>
+                            </div>
+                            <div class="rating__level">
+                                <input type="radio" name="star" class="rating__input" value="1">
+                                <label class="rating__star" for="1"><img class="rating__image" src="styles/images/product_img/star.png" alt=""></label>
+
+                                <input name="star" type="radio" class="rating__input" value="2">
+                                <label class="rating__star" for="2"><img class="rating__image" src="styles/images/product_img/star.png" alt=""></label>
+                                <input name="star" type="radio" class="rating__input" value="3">
+                                <label class="rating__star" for="3"><img class="rating__image" src="styles/images/product_img/star.png" alt=""></label>
+                                <input name="star" type="radio" class="rating__input" value="4">
+                                <label class="rating__star" for="4"><img class="rating__image" src="styles/images/product_img/star.png" alt=""></label>
+                                <input name="star" type="radio" class="rating__input" value="5">
+                                <label class="rating__star" for="5"><img class="rating__image" src="styles/images/product_img/star.png" alt=""></label>
+                            </div>
+                        </div>
+
+                        <div class="availability">
+                            <p class="availability__head">Наличие:</p>
+                            <p class="availability__description">под заказ, изготовление 3 рабочих дня</p>
+                        </div>
+                        <span class="price">63,00 BYN</span>
+
+                        <form class="choice" action="">
+                            <div class="choice__wrapper"> <label class="choice__name" for="size">Размер запястья (от 13 до 18), см</label>
+
+                                <input class="choice__form" type="number" id="size" name="bracelet-size" min="13.00" max="18.00">
+                            </div>
+                            <div class="choice__wrapper">
+                                <label class="choice__name" for="quantity">Количество, шт</label>
+
+                                <input class="choice__form" type="number" id="quantity" name="quantity" min="1" max="10">
+                            </div>
+                            <select class="choice__form" name="furniture" id="">
+                                    <option class="choice__form-option" label selected disabled value="none">Цвет фурнитуры</option>
+                                <option class="choice__form-option" value="silver">Серебро</option>
+                                <option class="choice__furniture-option" value="gold">Золото</option>
+                            </select>
+                            <button type="submit" class="choice__button choice__button-margin">Добавить в корзину</button>
+                        </form>
+
+                        <div class="filter product-details">
+                            <input class="filter__checkbox" id="filter5" checked type="checkbox">
+                            <label class="filter__head product-details__head" for="filter5"> Описание</label>
+                            <div class="filter__field product-details__field">
+                                <div class="feature">
+                                    <p class="feature__name">Камень</p>
+                                    <div class="feature-box">
+                                        <div class="feature__characteristic">Наименование</div>
+                                        <div class="feature__characteristic-value">говлит</div>
+                                    </div>
+                                    <div class="feature-box">
+                                        <div class="feature__characteristic">Диаметр</div>
+                                        <div class="feature__characteristic-value">10 мм</div>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <p class="feature__name">Фурнитура</p>
+
+                                    <div class="feature-box">
+                                        <div class="feature__characteristic">Происхождение</div>
+                                        <div class="feature__characteristic-value">США (для браслета)/Южная Корея (для сережек)</div>
+                                    </div>
+                                    <div class="feature-box">
+                                        <div class="feature__characteristic">Марка</div>
+                                        <div class="feature__characteristic-value">Tierra Cast/ Milano Lux</div>
+                                    </div>
+                                    <div class="feature-box">
+                                        <div class="feature__characteristic">Материал</div>
+                                        <div class="feature__characteristic-value">пьютер с напылением серебра/золота, инкрустация цирконами</div>
+                                    </div>
+                                </div>
+                                <div class="feature">
+                                    <p class="feature__name">Серьги</p>
+
+                                    <div class="feature-box">
+                                        <div class="feature__characteristic">Застежка</div>
+                                        <div class="feature__characteristic-value">английская</div>
+                                    </div>
+                                    <div class="feature">
+                                        <p class="feature__name">браслет</p>
+                                        <div class="feature-box">
+                                            <div class="feature__characteristic">Описание</div>
+                                            <div class="feature__characteristic-value">шарм-подвеска "Дерево жизни". Символизирует связь и гармонию между землей и небом, человеком и божественной сущностью; означает бессмертие, возрождение и плодородие.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter product-details">
+                            <input class="filter__checkbox" id="filter6" type="checkbox">
+                            <label class="filter__head product-details__head" for="filter6">Значение камня</label>
+                            <div class="filter__field">
+                                <div class="feature-description">Считается, что говлит изгоняет тревогу, очищает мысли, уменьшает гнев и раздражение, активизировать самовоспитание, усиливает функции мозговой деятельности, способствует улучшению работоспособности. Он поможет сохранять
+                                    человеческое достоинство в любых ситуациях. Оберег будет поддерживать характер, делать личность возвышенной и уверенной в себе.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter product-details">
+                            <input class="filter__checkbox" id="filter7" type="checkbox">
+                            <label class="filter__head product-details__head" for="filter7">Знаки Зодиака</label>
+                            <div class="filter__field">
+                                <div class="feature-description">Идеален для <span class="feature-description__element">Дев, Козерогов, Тельцов и Скорпионов</span>. Не рекомендуется носить <span class="feature-description__element">Стрельцам, Львам и Овнам</span>. Для остальных знаков
+                                    Зодиака - нейтрален.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="related-info">
+                    <div class="reviews">
+                        <a href="" class="reviews__head">19 отзывов</a>
+                        <div class="reviews-wrapper">
+                            <iframe class="reviews__window" allowfullscreen scrolling="no" src="https://vseotzyvy.ru/item/10938/reviews-brasletyi-iz-naturalnyih-kamnej/?&sort=new" frameborder="0 "></iframe></div>
+                        <a class="choice__button reviews__button " href=" ">Написать отзыв</a> </div>
+                    <div class="related-products">
+                        <div class="catallogue__head related-products__head">
+                            <div class="catallogue__head-line catallogue__product-line "></div>
+                            <div class="catallogue__head-title ">Вам может понравиться</div>
+                            <div class="catallogue__head-line catallogue__product-line "></div>
+                        </div>
+                        <div class="swiper-container swiper-box">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="imgTitle">
+                                            <img src="styles/images/product_img/ad1.jpg" alt="" />
+                                        </div>
+                                        <p>Браслет из аметиста с шармом "Знак Зодиака"<br> <br> <span>35, 00 BYN</span></p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="imgTitle">
+                                            <img src="styles/images/product_img/ad2.jpg" alt="" />
+                                        </div>
+                                        <p>Браслет из камня Кошачий глаз с кристаллами Swarovski<br><br> <span>33, 00 BYN</span></p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="imgTitle">
+                                            <img src="styles/images/product_img/ad3.jpg" alt="" />
+                                        </div>
+                                        <p>Комплект из лавандового кварца <br> <br> <span>75, 00 BYN</span></p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="imgTitle">
+                                            <img src="styles/images/product_img/ad4.jpg" alt="" />
+                                        </div>
+                                        <p>Сережки с черными кристаллами Swarovski<br><br> <span>40, 00 BYN</span></p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="imgTitle">
+                                            <img src="styles/images/product_img/ad5.jpg" alt="" />
+                                        </div>
+                                        <p>Браслет из розового кварца с шармом "Подкова"<br> <br> <span>37, 00 BYN</span></p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catallogue ">
+                <div class="catallogue__head ">
+                    <div class="catallogue__head-line "></div>
+                    <div class="catallogue__head-title ">Популярные камни</div>
+                    <div class="catallogue__head-line "></div>
+                </div>
+                <div class="catallogue__conteiner ">
+                    <a class="catallogue__conteiner-item " href=" "><img class="catallogue__conteiner-icon " src="styles/images/home-page_img/pinkquarz.png " alt=" ">
+                        <p>розовый кварц</p>
+                    </a>
+                    <a class="catallogue__conteiner-item " href=" "><img class="catallogue__conteiner-icon " src="styles/images/home-page_img/garnet.png " alt=" ">
+                        <p>гранат</p>
+                    </a>
+                    <a class="catallogue__conteiner-item " href=" "><img class="catallogue__conteiner-icon " src="styles/images/home-page_img/amethyst.png " alt=" ">
+                        <p>аметист</p>
+                    </a>
+                    <a class="catallogue__conteiner-item " href=" "><img class="catallogue__conteiner-icon " src="styles/images/home-page_img/amazonite.png " alt=" ">
+                        <p>амазонит</p>
+                    </a>
+                    <a class="catallogue__conteiner-item " href=" "><img class="catallogue__conteiner-icon " src="styles/images/home-page_img/howlit.png " alt=" ">
+                        <p>говлит</p>
+                    </a>
+                    <a class="catallogue__conteiner-item " href=" "><img class="catallogue__conteiner-icon " src="styles/images/home-page_img/avantyrin.png " alt=" ">
+                        <p>авантюрин</p>
+                    </a>
+                </div>
+            </div>
+            <div class="bottom-box ">
+                <div class="bottom-box__conteiner ">
+                    <span class="bottom-box__order ">01.</span>
+                    <div class="bottom-box__box "><span class="bottom-box__title ">Бесплатаня доставка по РБ</span>
+                        <span class="bottom-box__clarification ">при заказе от 50,00 BYN</span></div>
+                </div>
+                <div class="bottom-box__conteiner ">
+                    <span class="bottom-box__order ">02.</span>
+                    <div class="bottom-box__box ">
+                        <span class="bottom-box__title ">Индивидуальное изготовление</span>
+                        <span class="bottom-box__clarification ">с учетом всех ваших пожеланий</span></div>
+                </div>
+                <div class="bottom-box__conteiner ">
+                    <span class="bottom-box__order ">03.</span>
+                    <div class="bottom-box__box "> <span class="bottom-box__title ">Широкий ассортимент</span>
+                        <span class="bottom-box__clarification ">камней и фурнитуры</span></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer ">
+        <div class="footer__wrapper content ">
+            <div class="footer-top ">
+                <ul class="menu menu-footer ">
+                    <li class="menu__item menu__footer-item "><a class="menu__item-link menu__footer-link " href=" ">О нас</a></li>
+                    <li class="menu__item menu__footer-item "><a class="menu__item-link menu__footer-link " href=" ">Украшения</a></li>
+                    <li class="menu__item menu__footer-item "><a class="menu__item-link menu__footer-link " href="stones.html">О камнях</a></li>
+                    <li class="menu__item menu__footer-item "><a class="menu__item-link menu__footer-link " href=" ">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-middle ">
+
+                <div class="contacts ">
+                    <h3 class="contacts__head ">Контакты</h3>
+                    <p class="contacts__text ">Ремесленник <br> Гаштольд Татьяна Петровна <br>УНП АС 4412504</p>
+                    <div class="contacts__details ">
+                        <p class="contacts__details-text ">Тел. / Viber / Whatsapp / Telegram: </p>
+                        <a class="contacts__details-link " href="tel:375291847201 ">+375 29 184 72 01 (Velcom)</a>
+                    </div>
+                    <div class="contacts__details ">
+                        <p class="contacts__details-text ">E-mail:</p>
+                        <a class="contacts__details-link " href="mailto:tanchos_jewelry@mail.ru " target="_blank ">tanchos_jewelry@mail.ru</a>
+                    </div>
+                    <div class="contacts__net ">
+                        <span class="contacts__net-title ">Подпишитесь на наши обновления в социальных сетях:
+                        </span>
+                        <br>
+                        <a class="contacts__net-link " href="https://www.instagram.com/tanchos_jewelry/ " target="_blank ">
+                            <img class="contacts__net-image " src="styles/images/footer_img/instagram3.png " target="_blank " alt=" ">
+                        </a>
+                        <a class="contacts__net-link " target="_blank " href="https://www.facebook.com/Tanchos-Craft-Stone-Jewelry-428442717901018/ "><img class="contacts__net-image " src="styles/images/footer_img/facebook3.png " target="_blank
+                                " alt=" "></a>
+                    </div>
+                </div>
+
+                <div class="location ">
+                    <h3 class="location__head ">Адрес</h3>
+                    <p class="location__description ">ул. Жуковского, 19, г. Минск, 220007, Республика Беларусь</p>
+                    <iframe class="location__map " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.941847648393!2d27.549430015858533!3d53.87946178009423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd026160a3b21%3A0xba7aaac3deb3a836!2z0YPQuy4g0JbRg9C60L7QstGB0LrQvtCz0L4gMTksINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1554885044159!5m2!1sru!2sby "
+                        frameborder="0 " style="border:0 " allowfullscreen></iframe>
+                </div>
+
+                <div class="feedback ">
+                    <h3 class="feedback__head ">Обратная связь</h3>
+                    <form class="feedback__form " action=" ">
+                        <fieldset class="feedback__frame ">
+                            <input class="feedback__frame-field " placeholder="Ваше имя " type="text " name="name ">
+                            <input class="feedback__frame-field " placeholder="Ваш e-mail " type="email " mail="email ">
+                            <textarea class="feedback__frame-field " placeholder="Ваше сообщение " name="opinion " id=" " cols="30 " rows="10 "></textarea>
+
+                        </fieldset>
+                        <button class="feedback__submition " type="submit " name="feedback ">Отправить</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-low "> Гаштольд Татьяна, 2019</div>
+        </div>
+    </footer>
+
+    <script src="js/common.js"></script>
+</body>
+
+
+</html>
