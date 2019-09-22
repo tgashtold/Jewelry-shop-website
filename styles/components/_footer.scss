@@ -1,0 +1,222 @@
+.footer {
+    background-color: black;
+    color: $maingrey;
+    @include nutino (300, 13px, 16px, "Nutino-light");
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    &-top {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #555252;
+    }
+    &-middle {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        border-bottom: 1px solid #555252;
+        padding-bottom: 20px;
+    }
+    &-low {
+        text-transform: uppercase;
+        font-size: 9px;
+        height: 25px;
+        align-self: center;
+        margin-top: 2px;
+    }
+}
+
+.contacts,
+.location,
+.feedback {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    &__head {
+        text-transform: uppercase;
+        font: normal 600 18px/22px 'Playfair-regular', sans-serif;
+        margin-bottom: 15px;
+    }
+}
+
+.menu__footer {
+    &-link {
+        color: $maingrey;
+    }
+    &-link:hover {
+        color: white;
+        border-bottom: 0;
+    }
+}
+
+.contacts {
+    &__head {
+        align-self: center;
+    }
+    &__details {
+        &-text {
+            margin: 8px 0;
+        }
+        &-link {
+            color: $maingrey;
+            transition: .3s;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        &-link:hover {
+            color: white;
+            transition: .3s;
+        }
+    }
+    &__net {
+        margin-top: 20px;
+        &-image {
+            margin: 20px 15px 0px 0;
+            height: 25px;
+            transition: .3s;
+        }
+        &-image:hover {
+            transform: translateY(5px);
+            transition: .3s;
+        }
+        &-link {
+            display: inline-block;
+        }
+    }
+}
+
+.location {
+    align-items: center;
+    &__map {
+        margin-top: 15px;
+        height: 210px;
+        width: 100%;
+    }
+}
+
+.feedback {
+    align-items: center;
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__frame {
+        &-field {
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            padding: 3px;
+            transition: .3s;
+        }
+        &-field:focus,
+        &-field:hover {
+            box-shadow: 3px 3px 8px pink;
+            transition: .3s;
+        }
+        &-field::placeholder {
+            color: $maingrey;
+            @include nutino (300, 13px, 16px, "Nutino-light");
+        }
+    }
+    &__submition {
+        border: 0;
+        @include nutino (300, 12px, 16px, "Nutino-light");
+        padding: 4px 10px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        background-image: linear-gradient(to top, #aaaaaa 20%, white 90%);
+        transition: .1s;
+    }
+    &__submition:active {
+        background-image: linear-gradient(to top, grey 20%, white 90%);
+        transition: .1s;
+    }
+}
+
+@include media-max (1023px) {
+    .footer-top {
+        height: 35px;
+    }
+}
+
+@include media-max (767px) {
+    .footer-middle {
+        flex-wrap: wrap;
+        margin-top: 10px;
+        padding-bottom: 10px
+    }
+    .contacts,
+    .feedback,
+    .location {
+        &__head {
+            margin: 7px 0 7px 0;
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+    .location {
+        width: 100%;
+        order: 1;
+        &__map {
+            height: 100px;
+            margin-top: 5px;
+        }
+        &__details-link {
+            font-size: 13px;
+        }
+    }
+    .contacts {
+        order: 2;
+        width: 49%;
+        padding: 6px;
+        &__net {
+            margin-top: 8px;
+        }
+    }
+    .feedback {
+        padding: 6px;
+        order: 3;
+        width: 49%;
+        &__frame-field:last-child {
+            height: 105px;
+        }
+        &__submition {
+            font-size: 10px;
+            padding: 2px 8px;
+        }
+    }
+    .footer-top {
+        display: none;
+    }
+    .menu__footer-link {
+        font-size: 11px;
+    }
+    .contacts__details-link {
+        font-size: 13px;
+    }
+}
+
+@include media-max (450px) {
+    .footer-middle {
+        flex-direction: column;
+    }
+    .contacts,
+    .feedback,
+    .location {
+        width: 100%;
+        &__head {
+            line-height: 10px;
+        }
+    }
+    .contacts__net-image {
+        height: 18px;
+        margin: 10px 10px 0 0;
+    }
+    .footer {
+        font-size: 10px;
+        line-height: 13px;
+    }
+}

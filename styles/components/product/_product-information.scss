@@ -1,0 +1,236 @@
+.product-information {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    @include nutino (400, 12px, 15px);
+}
+
+.rating__image {
+    width: 16px;
+    height: 16px;
+}
+
+.product-code {
+    color: $maingrey;
+    text-transform: uppercase;
+}
+
+.product-name {
+    @include playfair (400, 24px, 28px);
+    text-transform: uppercase;
+    color: black;
+}
+
+.rating::before,
+.rating::after,
+.rating__level::before,
+.rating__level::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    &__text {
+        color: $maingrey;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+    &__head {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-box {
+        display: flex;
+        &__item {
+            color: black;
+            transition: .2s;
+            &+& {
+                border-left: $border;
+                padding-left: 10px;
+            }
+            &:first-child {
+                margin-right: 10px;
+            }
+            &:hover {
+                color: grey;
+                transition: .2s;
+            }
+        }
+    }
+    &__level {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 105px;
+        margin-left: -5px;
+    }
+    &__input {
+        height: 20px;
+        opacity: 0;
+        position: relative;
+        &:nth-of-type(1) {
+            left: 83px;
+        }
+        &:nth-of-type(2) {
+            left: 41px;
+        }
+        &:nth-of-type(3) {
+            right: 0px;
+        }
+        &:nth-of-type(4) {
+            right: 41px;
+        }
+        &:nth-of-type(5) {
+            right: 83px;
+        }
+        &:checked~.rating__star,
+        &:hover~.rating__star {
+            opacity: 1;
+            transition: .2s;
+        }
+    }
+    &__star {
+        z-index: -2;
+        top: 3px;
+        opacity: .3;
+        transition: .2s;
+        position: absolute;
+        &:nth-of-type(1) {
+            right: 1px;
+        }
+        &:nth-of-type(2) {
+            right: 22px;
+        }
+        &:nth-of-type(3) {
+            right: 43px;
+        }
+        &:nth-of-type(4) {
+            right: 63px;
+        }
+        &:nth-of-type(5) {
+            right: 84px;
+        }
+    }
+}
+
+.availability {
+    display: flex;
+    justify-content: space-between;
+    &__description {
+        font-weight: 600;
+    }
+}
+
+.price {
+    font-size: 18px;
+    margin: 25px 0;
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    &__wrapper {
+        margin-bottom: 10px;
+    }
+    &__name {
+        margin-right: 10px;
+    }
+    &__form {
+        @include nutino (400, 11px, 14px);
+        padding: 5px 0 5px 7px;
+        border-radius: 5px;
+        box-shadow: none;
+        border: $border;
+        background-color: #f7f7f7;
+    }
+    &__button {
+        color: #ffffff;
+        font-size: 10px;
+        text-transform: uppercase;
+        background-color: black;
+        padding: 10px 40px;
+        width: max-content;
+        border: 0;
+        transition: .2s;
+        &-margin {
+            margin: 20px 0 25px;
+        }
+        &:active {
+            background-color: rgb(95, 93, 93);
+        }
+        &:hover {
+            background-color: rgb(66, 65, 65);
+            color: #e0dcdc;
+            transition: .2s;
+        }
+    }
+}
+
+.product-details {
+    border: 0;
+    padding: 0 5px 0 0;
+    &+& {
+        margin-top: 0;
+    }
+    &__field {
+        display: flex;
+        flex-direction: column;
+    }
+    &__head {
+        font: normal 400 14px/18px 'Playfair-regular', sans-serif;
+        text-transform: uppercase;
+    }
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    line-height: 15px;
+    &-box {
+        display: flex;
+        justify-content: space-between;
+        &+& {
+            margin-top: 5px;
+        }
+    }
+    &__name {
+        margin: 15px 0 10px;
+        font-weight: 600;
+    }
+    &__characteristic {
+        width: 30%;
+        margin-right: 20px;
+        &-value {
+            width: 60%;
+            text-transform: none;
+            color: $maingrey;
+        }
+    }
+    &-description {
+        text-transform: none;
+        text-align: justify;
+        color: $maingrey;
+        &__element {
+            font-weight: 600;
+            &:first-child {
+                color: rgb(31, 182, 31);
+            }
+            &:last-child {
+                color: rgb(248, 45, 45);
+            }
+        }
+    }
+}
+
+@include media-max (767px) {
+    .product-information {
+        width: 100%;
+        margin-top: 30px;
+    }
+}

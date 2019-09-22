@@ -1,0 +1,241 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    &-top,
+    &-middle,
+    &-low {
+        width: 100%;
+    }
+    &-top {
+        height: 36px;
+        background-color: black;
+        color: $maingrey;
+        @include nutino (300, 11px, 14px, "Nutino-light");
+        text-transform: uppercase;
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+        &-left {
+            display: flex;
+            justify-content: flex-start;
+        }
+        &-center__content {
+            color: rgb(253, 228, 232);
+            font-size: 12px;
+        }
+        &-right__button {
+            border: 0;
+            background-color: black;
+            color: $maingrey;
+            @include nutino (300, 11px, 14px, "Nutino-light");
+            text-transform: uppercase;
+            transition: .2s;
+            padding: 0;
+        }
+        &-right__button:hover {
+            color: #ffffff;
+            border-bottom: 1px solid white;
+            transition: .2s;
+        }
+    }
+    &-middle {
+        height: 100px;
+        &__wrapper {
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        &__link {
+            text-decoration: none;
+            font-size: 36px;
+            font-weight: 700;
+            color: $mainpink;
+            margin-right: 8%;
+        }
+        &-right {
+            display: flex;
+            justify-content: flex-end;
+            width: 270px;
+        }
+    }
+    &-low {
+        height: 35px;
+        border-bottom: $border;
+    }
+}
+
+.selection-field {
+    &+& {
+        margin-left: 10px;
+    }
+    &__form {
+        border: 0;
+        @include nutino (300, 11px, 14px, "Nutino-light");
+        text-transform: uppercase;
+        background-color: black;
+        color: $maingrey;
+        &-option {
+            color: $maingrey;
+            @include nutino (300, 11px, 14px, "Nutino-light");
+            text-transform: uppercase;
+            background-color: black;
+            border: 0;
+        }
+    }
+}
+
+.search-field {
+    border-right: $border;
+    border-left: $border;
+    height: 25px;
+    &__box {
+        margin: 0 15px 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    &__icon {
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+    }
+    &__area {
+        width: 55px;
+        border: 0;
+        transition: .3s;
+    }
+    &__area::placeholder {
+        @include nutino (300, 11px, 14px, "Nutino-light");
+        color: #282828;
+        text-transform: uppercase;
+    }
+    &__area:focus::placeholder {
+        color: $maingrey;
+    }
+    &__area:focus {
+        transition: .3s;
+        width: 100px;
+    }
+}
+
+.search-field:hover {
+    .search-field__icon {
+        opacity: 0.6;
+    }
+}
+
+.shopping-basket {
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    text-decoration: none;
+    &__icon {
+        height: 23px;
+        width: 23px;
+        margin: 0 5px 0 15px;
+    }
+    &__title {
+        @include nutino (300, 11px, 14px, "Nutino-light");
+        color: #282828;
+        text-transform: uppercase;
+        transition: .2s;
+    }
+}
+
+.shopping-basket:hover {
+    .shopping-basket__icon {
+        opacity: 0.6;
+    }
+}
+
+.menu {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        &-link {
+            @include nutino (300, 13px, 14px, "Nutino-light");
+            color: #282828;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: .5s;
+        }
+        &-link:hover {
+            border-bottom: 1px solid #282828;
+            transition: .15s;
+        }
+    }
+}
+
+@include media-max (1023px) {
+    .header-top-right {
+        display: none;
+    }
+    .header-middle {
+        height: 85px;
+    }
+}
+
+@include media-max (767px) {
+    .header-top-center__content {
+        display: none;
+    }
+    .header-middle {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__link {
+            order: 2;
+            margin-top: 50px;
+            margin: 25px 0 38px 0;
+            font-size: 27px;
+        }
+        &-right {
+            order: 1;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    .shopping-basket {
+        order: 1;
+        align-self: flex-end;
+        &__title {
+            font: normal 300 11px/14px "Nutino-light", sans-serif;
+            color: $maingrey;
+        }
+    }
+    .search-field {
+        order: 2;
+        margin: 70px 0 -95px 0;
+        width: 65%;
+        align-self: center;
+        border: 0;
+        background-color: rgb(247, 243, 243);
+        border-radius: 10px;
+        &__area {
+            transition: .9s;
+            background-color: rgb(247, 243, 243);
+            border-radius: 2px;
+        }
+        &__area:focus {
+            padding: 2px 5px;
+            transition: .9s;
+            width: 90%;
+            background-color: white;
+        }
+    }
+    .header-low {
+        margin-top: 20px;
+    }
+}

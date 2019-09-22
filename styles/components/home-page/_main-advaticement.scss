@@ -1,0 +1,435 @@
+                    .advaticement {
+                        display: flex;
+                        margin-bottom: 40px;
+                        &-left {
+                            display: flex;
+                            flex-direction: column;
+                            margin-right: 50px;
+                            &__box {
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            &__head {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 45px;
+                            }
+                            &__title {
+                                text-transform: uppercase;
+                            }
+                            &__line {
+                                border-bottom: $border;
+                                width: 77%;
+                            }
+                        }
+                        &__aside {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: 600px;
+                            border: $border;
+                            border-radius: 3px;
+                            overflow: hidden;
+                            padding: 20px;
+                            height: 570px;
+                            &-title {
+                                text-transform: uppercase;
+                                font-size: 20px;
+                                font-weight: 400;
+                                margin-bottom: 25px;
+                            }
+                            &-link {
+                                align-self: flex-end;
+                                margin-top: 80px;
+                                color: #000000;
+                                font-size: 14px;
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                transition: .15s;
+                            }
+                            &-link:hover {
+                                font-weight: 600;
+                                transition: .15s;
+                            }
+                        }
+                    }
+                    
+                    .product-new {
+                        display: flex;
+                        flex-direction: column;
+                        width: 32%;
+                        align-items: center;
+                        justify-content: space-between;
+                        transition: .15s;
+                        color: #000000;
+                        text-decoration: none;
+                        overflow: hidden;
+                        &__wrapper {
+                            height: 120px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+                        &__image {
+                            margin-bottom: 15px;
+                            width: 100%;
+                            border-radius: 5px;
+                        }
+                        &__description {
+                            font-size: 14px;
+                            line-height: 18px;
+                            text-transform: uppercase;
+                            color: #000000;
+                            text-decoration: none;
+                            text-align: center;
+                            margin-bottom: 10px;
+                            width: 95%;
+                        }
+                        &__price {
+                            @include nutino (600, 16px, 18px, "Nutino-light");
+                        }
+                    }
+                    
+                    .product-new:hover {
+                        transform: scale(.95);
+                        transition: .15s;
+                        box-shadow: 3px 7px 20px lightgray;
+                        transition-delay: .1s;
+                        border-radius: 10px;
+                    }
+                    
+                    .card::before,
+                    .card::after {
+                        content: "";
+                        display: block;
+                        clear: both;
+                    }
+                    
+                    .card {
+                        position: relative;
+                        height: 150px;
+                        width: 100%;
+                        &__image {
+                            width: 170px;
+                            height: 170px;
+                            position: absolute;
+                            z-index: -1;
+                            border-radius: 2px;
+                        }
+                        &__description {
+                            width: 170px;
+                            height: 110px;
+                            background-color: white;
+                            position: relative;
+                            z-index: 1;
+                            padding: 15px;
+                            @include nutino (300, 10px, 15px, "Nutino-light");
+                            text-transform: uppercase;
+                            top: 85px;
+                            left: 65px;
+                            border-radius: 2px;
+                            &-head {
+                                font-size: 13px;
+                                color: #282828;
+                                margin-bottom: 10px;
+                                text-decoration: none;
+                            }
+                            &-head:hover {
+                                text-decoration: underline;
+                            }
+                            &-text {
+                                color: $maingrey;
+                            }
+                        }
+                        &+& {
+                            margin-top: 70px;
+                        }
+                    }
+                    
+                    .catallogue__conteiner {
+                        margin: 30px 0 30px 0;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        &-item {
+                            font-size: 20px;
+                            line-height: 20px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            color: #282828;
+                            background-color: rgb(247, 243, 243);
+                            padding: 5px 7px;
+                            border-radius: 10px;
+                            transition: .2s;
+                        }
+                        &-item:hover {
+                            box-shadow: 2px 2px 5px lightgrey;
+                            background-color: rgb(233, 230, 230);
+                            color: black;
+                            transition: .2s;
+                        }
+                        &-icon {
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            margin-right: 8px;
+                        }
+                    }
+                    
+                    .bottom-box {
+                        display: flex;
+                        justify-content: space-around;
+                        color: #000000;
+                        border-top: $border;
+                        padding-top: 40px;
+                        &__conteiner {
+                            display: flex;
+                            align-items: flex-start;
+                        }
+                        &__box {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                        }
+                        &__order {
+                            margin-right: 10px;
+                        }
+                        &__title {
+                            font-size: 14px;
+                            text-transform: uppercase;
+                        }
+                        &__clarification {
+                            @include nutino (300, 11px, 13px, "Nutino-light");
+                            text-transform: uppercase;
+                        }
+                    }
+                    
+                    @include media-max (1023px) {
+                        .product-new:last-child {
+                            display: none;
+                        }
+                        .product-new {
+                            width: 43%;
+                            &__description {
+                                font-size: 13px;
+                            }
+                            &__wrapper {
+                                height: 80px;
+                            }
+                        }
+                        .advaticement {
+                            margin-bottom: 25px;
+                        }
+                        .advaticement-left {
+                            margin-right: 25px;
+                            flex-shrink: 1;
+                            &__title {
+                                font-size: 20px;
+                            }
+                            &__head {
+                                margin-bottom: 23px;
+                            }
+                            &__box {
+                                justify-content: space-around;
+                            }
+                        }
+                        .advaticement__aside {
+                            width: 350px;
+                            height: 440px;
+                            padding: 17px;
+                            &-title {
+                                font-size: 15px;
+                                margin-bottom: 10px;
+                            }
+                            &-link {
+                                margin-top: 60px;
+                                font-size: 13px;
+                            }
+                        }
+                        .card {
+                            height: 150px;
+                            width: 100%;
+                            &__image {
+                                width: 130px;
+                                height: 130px;
+                            }
+                            &__description {
+                                width: 125px;
+                                height: 80px;
+                                padding: 8px;
+                                @include nutino (300, 9px, 11px, "Nutino-light");
+                                top: 70px;
+                                left: 65px;
+                                &-text {
+                                    margin-top: 5px;
+                                }
+                                &-head {
+                                    font-size: 11px;
+                                }
+                            }
+                            &+& {
+                                margin-top: 70px;
+                            }
+                        }
+                        .catallogue__head-title {
+                            font-size: 18px;
+                        }
+                        .catallogue__conteiner {
+                            margin: 20px 0;
+                            &-item {
+                                font-size: 14px;
+                                &:last-child {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .bottom-box {
+                            padding-top: 20px;
+                            &__title {
+                                font-size: 12px;
+                                line-height: 14px;
+                            }
+                            &__clarification {
+                                @include nutino (300, 10px, 14px, "Nutino-light");
+                            }
+                            &__order {
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                    
+                    @include media-max (767px) {
+                        .product-new:nth-child(2) {
+                            display: none;
+                        }
+                        .advaticement-left__title {
+                            font-size: 14px;
+                        }
+                        .advaticement {
+                            flex-direction: column;
+                            &__aside {
+                                flex-direction: row;
+                                width: 100%;
+                                height: 185px;
+                                justify-content: space-around;
+                                &-link {
+                                    margin-top: 0;
+                                    font-size: 11px;
+                                    margin-left: 1%;
+                                    line-height: normal;
+                                    align-self: flex-start;
+                                }
+                                &-title {
+                                    line-height: normal;
+                                    text-align: center;
+                                    margin-right: 5%;
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                        .product-new {
+                            width: 100%;
+                            flex-direction: row;
+                            justify-content: space-around;
+                            &__wrapper {
+                                order: 1;
+                                width: 40%
+                            }
+                            &__image {
+                                order: 2;
+                                width: 40%;
+                            }
+                        }
+                        .product-new:hover {
+                            transform: none;
+                            box-shadow: none;
+                        }
+                        .card {
+                            &+& {
+                                margin-top: 0;
+                            }
+                        }
+                        .catallogue__conteiner {
+                            &-item {
+                                &:nth-child(1),
+                                &:nth-child(2) {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .catallogue__head-title {
+                            font-size: 14px;
+                        }
+                        .catallogue__conteiner-item {
+                            font-size: 12px;
+                        }
+                        .bottom-box {
+                            &__conteiner {
+                                align-items: center;
+                                max-width: 30%;
+                            }
+                            &__title {
+                                font-size: 10px;
+                                line-height: 12px;
+                                margin-top: 3px;
+                            }
+                            &__clarification {
+                                display: none;
+                            }
+                            &__order {
+                                line-height: normal;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    
+                    @include media-max (450px) {
+                        .card:nth-child(2) {
+                            display: none;
+                        }
+                        .bottom-box {
+                            flex-direction: column;
+                            padding-left: 20px;
+                            &__conteiner {
+                                max-width: 100%;
+                            }
+                        }
+                        .catallogue__conteiner {
+                            justify-content: space-around;
+                            &-item {
+                                &:nth-child(3) {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .catallogue__head-line {
+                            width: 26%;
+                        }
+                        .advaticement-left__title {
+                            font-size: 12px;
+                        }
+                        .catallogue__head-title {
+                            font-size: 12px;
+                        }
+                        .card__image {
+                            width: 130px;
+                            height: 130px;
+                        }
+                        .card__description {
+                            left: 60px;
+                        }
+                        .advaticement__aside-title {
+                            margin-right: 8%
+                        }
+                        .advaticement__aside-link {
+                            margin-left: 3%
+                        }
+                        .product-new__description {
+                            font-size: 11px;
+                            line-height: 13px;
+                        }
+                    }

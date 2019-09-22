@@ -1,0 +1,35 @@
+.navigation-top {
+    display: flex;
+    justify-content: space-between;
+    @include nutino (300, 10px, 12px, "Nutino-light");
+    color: $maingrey;
+    &-left,
+    &-right {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link {
+        color: $maingrey;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2px;
+    }
+    &__link:hover {
+        text-decoration: underline;
+    }
+    &__separator {
+        margin: 0 4px 0 6px;
+    }
+    &__fragment {
+        font-size: 12px;
+        margin-right: 8px;
+    }
+}
+
+@include media-max (520px) {
+    .navigation-top {
+        display: none;
+    }
+}

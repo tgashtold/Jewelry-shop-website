@@ -1,0 +1,201 @@
+// меню моб
+@media (min-width: 766px) {
+    .humburger {
+        display: none;
+    }
+}
+
+@include media-max (767px) {
+    .header-low {
+        position: relative;
+    }
+    .humburger {
+        width: 70px;
+        height: 15px;
+        border-top: 1px solid darkgrey;
+        border-bottom: 1px solid darkgrey;
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 50%;
+        top: 2px;
+        margin-left: -35px;
+        cursor: pointer;
+        z-index: 1;
+        &-line {
+            height: 1px;
+            background-color: darkgrey;
+            width: 100%;
+        }
+        &.active {
+            border-color: black;
+            .humburger-line {
+                background-color: black;
+            }
+        }
+        &.active+.header-low__wrapper {
+            visibility: visible;
+            transition: .15s;
+        }
+    }
+    .header-low__wrapper {
+        visibility: hidden;
+        position: absolute;
+        overflow: hidden;
+        width: 0%;
+        right: 48.5%;
+        padding-top: 10px;
+        margin-right: -48.5%;
+        top: 17px;
+        background-color: white;
+        z-index: 4;
+        transition: .15s;
+        &.active {
+            display: block;
+            transform: none;
+            width: 100%;
+            height: 100px;
+        }
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        width: 100%;
+        &__item {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            transition: .1s;
+            overflow: hidden;
+            &:hover {
+                background-color: rgb(253, 224, 230);
+                transition: .1s;
+            }
+        }
+        &__item-link {
+            text-align: center;
+            width: 40%;
+            color: black;
+            padding: 4px 0;
+            border-bottom: $border;
+        }
+    }
+}
+
+// меню десктоп
+.menu__item-wrapper {
+    position: relative;
+    transition: .3s;
+}
+
+.humburger1 {
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    border: 0;
+    background-color: transparent;
+    transition: .1s;
+}
+
+.header-low__wrapper1 {
+    position: fixed;
+    width: 150px;
+    right: 49.5%;
+    top: 150px;
+    transform: translateY(20%);
+    z-index: 4;
+    transition: .2s;
+    visibility: hidden;
+    &.active {
+        display: block;
+        transform: none;
+        visibility: visible;
+        transition: .2s;
+    }
+}
+
+.menu1 {
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: white;
+    &__item1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        transition: .1s;
+        &:hover {
+            background-color: rgb(253, 224, 230);
+            transition: .1s;
+        }
+    }
+    .menu1__item1-link1 {
+        @include nutino (300, 12px, 18px, "Nutino-light");
+        color: black;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        padding: 4px 0;
+        &:hover {
+            text-transform: underline;
+        }
+    }
+}
+
+@media (max-width:1023px) {
+    .header-low__wrapper1 {
+        right: 49.5%;
+        top: 135px;
+    }
+}
+
+@media (max-width:980px) {
+    .header-low__wrapper1 {
+        right: 48.7%;
+    }
+}
+
+@media (max-width:900px) {
+    .header-low__wrapper1 {
+        right: 48%;
+    }
+}
+
+@media (max-width:850px) {
+    .header-low__wrapper1 {
+        right: 47%;
+    }
+}
+
+@media (max-width:767px) {
+    .header-low__wrapper1 {
+        right: 24%;
+        top: 138px;
+        width: 100px;
+    }
+    .humburger1 {
+        border-bottom: $border;
+    }
+    .menu1 {
+        height: 75px;
+    }
+}
+
+@media (max-width:550px) {
+    .header-low__wrapper1 {
+        right: 11%;
+    }
+    .menu__item-link {
+        width: 50%;
+    }
+}
+
+@media (max-width:400px) {
+    .header-low__wrapper1 {
+        right: 3%;
+    }
+}

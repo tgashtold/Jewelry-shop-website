@@ -1,0 +1,37 @@
+.product-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.product-gallery {
+    width: 56%;
+}
+
+.fotorama {
+    height: 100%;
+    width: 100%;
+    &__stage {
+        border-radius: 10px;
+    }
+    a {
+        img {
+            border-radius: 10px;
+        }
+    }
+}
+
+@include media-max (767px) {
+    .product-box {
+        flex-direction: column;
+    }
+    .product-gallery {
+        width: 100%;
+    }
+}
+
+@include media-max (520px) {
+    .product-box {
+        margin-top: 0;
+    }
+}

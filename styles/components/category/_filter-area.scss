@@ -1,0 +1,175 @@
+.filter-area {
+    display: flex;
+    flex-direction: column;
+    &__head {
+        font-size: 18px;
+        text-transform: uppercase;
+        align-self: center;
+        margin-bottom: 15px;
+    }
+}
+
+.filter {
+    border: $border;
+    border-radius: 5px;
+    padding: 0 15px;
+    @include nutino (400, 10px, 12px);
+    text-transform: uppercase;
+    &+& {
+        margin-top: 10px;
+    }
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 0;
+        background-image: url(images/category_img/arrow-down.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 10px 6px;
+        transition: .5s;
+        font-size: 11px;
+        font-weight: 600;
+    }
+    &__checkbox {
+        display: none;
+    }
+    &__checkbox:checked~&__field {
+        max-height: 600px;
+        transition: .5s;
+        padding: 10px 0 15px;
+    }
+    &__checkbox:checked+&__head {
+        background-image: url(images/category_img/arrow-up.png);
+        transition: .2s;
+    }
+    &__field {
+        transition: .2s;
+        max-height: 0px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        &-box {
+            &+& {
+                margin-left: 10%;
+            }
+        }
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__reset {
+        background-color: transparent;
+        margin-top: 15px;
+        @include nutino (400, 10px, 12px, "Nutino-light");
+        color: $maingrey;
+        text-transform: uppercase;
+        align-self: flex-end;
+        padding: 0;
+        border: 0;
+        transition: .2s;
+    }
+    &__reset:hover {
+        text-decoration: underline;
+        transition: .2s;
+    }
+    &__reset:focus {
+        color: black;
+        transition: .2s;
+    }
+}
+
+.filter__option {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 20px;
+    &+& {
+        margin-top: 3px;
+    }
+    &-name {
+        margin-left: 3px;
+    }
+    &-checkbox {
+        visibility: hidden;
+    }
+    &-name:before {
+        content: "";
+        cursor: pointer;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 2px;
+        top: 2px;
+        left: 0;
+        border: $border;
+        transition: .2s;
+    }
+    &-name:after {
+        visibility: hidden;
+        content: '';
+        position: absolute;
+        width: 7px;
+        height: 4px;
+        background: transparent;
+        top: 4px;
+        left: 2px;
+        border: 2px solid black;
+        border-radius: 1%;
+        border-top: none;
+        border-right: none;
+        transform: rotate(-45deg);
+    }
+    &-name:hover::before {
+        border-color: darkgrey;
+        box-shadow: 1px 2px 3px lightgrey;
+        transition: .2s;
+    }
+    &-checkbox:checked+&-name:after {
+        visibility: visible;
+    }
+}
+
+.filter__field::before,
+.filter__field::after,
+.filter__option::before,
+.filter__option::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.slider {
+    margin: 15px 0 10px;
+    &-description {
+        border: 0;
+        @include nutino (400, 11px, 12px);
+    }
+}
+
+@include media-max (1023px) {
+    .filter__wrapper {
+        flex-direction: column;
+    }
+    .filter__field-box {
+        &+& {
+            margin: 0;
+        }
+    }
+}
+
+@include media-max (767px) {
+    .filter__option {
+        height: 15px;
+    }
+    .filter__reset {
+        margin-top: 5px;
+    }
+}
+
+@include media-max (450px) {
+    .filter-area__head {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+}
